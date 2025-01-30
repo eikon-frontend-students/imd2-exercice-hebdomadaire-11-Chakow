@@ -12,3 +12,45 @@ img,
 video {
   display: block;
 }
+body {
+  display: flex;
+  padding: 50px;
+}
+.button {
+  display: flex;
+  padding: 10px 20px;
+  align-items: center;
+  gap: 10px;
+  border-radius: 19px;
+  border: 2px solid #f00;
+  width: min-content;
+  transition: 0.8s;
+}
+i {
+  color: #f00;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 18px;
+}
+.text {
+  color: #f00;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 18px; /* 100% */
+}
+.count {
+  color: #000;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px; /* 128.571% */
+}
+.button.is-active {
+  background: #f00;
+  .count,
+  .text,
+  i {
+    color: #fff;
+  }
+}
